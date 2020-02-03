@@ -10,7 +10,29 @@
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
 
+.bg-img {
+  /* The image used */
+  background-image: url("Website-Dateien/Banner.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
 }
 
 /*container*/
@@ -97,6 +119,8 @@ body {
 </head>
 <body>
   <!--Der HMTL Teil:-->
+  <div class="bg-img">
+  <div class="container">
   <div class="menübar">
   <a class="active" href="Startseite.html">Home</a>
   <a href="#news">News</a>
@@ -124,8 +148,8 @@ body {
 
 <nav>
   <ul>
-	<li><a href="../index.html">Startseite</a></li>
-	<li><a href="preise.html">Unsere Preise</a></li>
+	<li><a >Startseite</a></li>
+	<li><a >Unsere Preise</a></li>
 	<li>Bilder von unseren Produkten</li>
   </ul>
 </nav>
