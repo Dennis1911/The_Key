@@ -12,9 +12,13 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+#wrap{
+  width: 900;
+  margin: 0 auto;
 
+}
 .bg-img {
-  /* The image used */
+  /* The image useddd */
   background-image: url("Website-Dateien/Banner.jpg");
 
   min-height: 380px;
@@ -22,11 +26,11 @@ body {
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:auto;
   
   /* Needed to position the navbar */
-  position: relative;
-}
+  position: absolute; 
+}  
 
 /* Position the navbar container inside the image */
 .container {
@@ -119,25 +123,27 @@ body {
 </head>
 <body>
   <!--Der HMTL Teil:-->
-  <div class="bg-img">
-  <div class="container">
-  <div class="menübar">
-  <a class="active" href="Startseite.html">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <div id="wrap"> <!--Um die Website zu zentrieren.-->
+   <div class="bg-img">
+    <div class="container">
+     <div class="menübar">
+      <a class="active" href="Startseite.html">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
 
   <!--Dropdown Button mit 3 Unterthemen-->
-  <div class="dropdown">
-  	<button class="dropbtn">Dropdown
-      <i class="fa fa-caret-down"></i>
-	</button>
-  <div class= "dropdown-inhalt">
-  <a href="Seiten/Seite5.1.html">Thema 1</a>
-  <a href="Seiten/Seite5.2.html">Thema 2</a>
-  <a href="Seiten/Seite5.3.html">Thema 3</a>
-  </div>
-</div>
+       <div class="dropdown">
+  	    <button class="dropbtn">Dropdown
+         <i class="fa fa-caret-down"></i>
+	      </button>
+        <div class= "dropdown-inhalt">
+          <a href="Seiten/Seite5.1.html">Thema 1</a>
+          <a href="Seiten/Seite5.2.html">Thema 2</a>
+          <a href="Seiten/Seite5.3.html">Thema 3</a>
+        </div>
+      </div>
+    </div>
   </div>
 
 
