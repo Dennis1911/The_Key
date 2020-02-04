@@ -9,36 +9,14 @@
     <style>
 body {
 	margin: 0;
+  padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
-#wrap{
-  width: 900;
-  margin: 0 auto;
 
+.logo{
+letter-spacing: 5px;
 }
-.bg-img {
-  /* The image useddd */
-  background-image: url("Website-Dateien/Banner.jpg");
-
-  min-height: 380px;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:auto;
-  
-  /* Needed to position the navbar */
-  position: absolute; 
-}  
-
-/* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
-}
-
 /*container*/
 .menübar{ 
 	overflow: hidden;
@@ -46,11 +24,16 @@ body {
 }
 
 .menübar a{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
 	float: left;
 	color: #ffffff;
-	text-align: center;
-	padding: 14px 16px;
+	align-items: center;
+  min-height: 40px;
+	padding: 35px 20px;
 	font-size: 17px;
+  letter-spacing: 2px;
 }
 
 .menübar a:hover {
@@ -71,11 +54,12 @@ body {
 
 /* Dropdown button */
 .dropdown .dropbtn {
+  letter-spacing: 2px;
   font-size: 16px;
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 45px 20px;
   background-color: #282828;
 }
 
@@ -109,7 +93,6 @@ body {
 <style>
   /*Dark mode, Button und Funktion (Javascript)*/
   body {
-    padding: 25px;
     background-color: white;
     color: black;
     font-size: 25px;
@@ -123,34 +106,34 @@ body {
 </head>
 <body>
   <!--Der HMTL Teil:-->
-  <div id="wrap"> <!--Um die Website zu zentrieren.-->
-   <div class="bg-img">
+  
+      
     <div class="container">
      <div class="menübar">
-      <a class="active" href="Startseite.html">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+      <a class="logo">VERSCHLÜSSELUNG</a>
+      <a class="active" href="Startseite.html">HOME</a>
+      <a href="#news">NEWS</a>
+      <a href="#contact">CONTACT</a>
+      <a href="#about">ABOUT</a>
 
   <!--Dropdown Button mit 3 Unterthemen-->
        <div class="dropdown">
-  	    <button class="dropbtn">Dropdown
-         <i class="fa fa-caret-down"></i>
+  	    <button class="dropbtn">DROPDOWN
 	      </button>
         <div class= "dropdown-inhalt">
-          <a href="Seiten/Seite5.1.html">Thema 1</a>
-          <a href="Seiten/Seite5.2.html">Thema 2</a>
-          <a href="Seiten/Seite5.3.html">Thema 3</a>
+          <a href="Seiten/Seite5.1.html">THEMA 1</a>
+          <a href="Seiten/Seite5.2.html">THEMA 2</a>
+          <a href="Seiten/Seite5.3.html">THEMA 3</a>
         </div>
-      </div>
+       </div>
     </div>
   </div>
-
-
-<div style="padding-left:16px">
-  <h2>Verschlüsselung</h2>
-  <p>Some Inhalt..</p>
 </div>
+</div>
+<div style="padding-left: 30px;">
+<h2>Verschlüsselung</h2>
+<p>Some Inhalt..</p>
+
 
 <nav>
   <ul>
@@ -169,7 +152,7 @@ body {
 
 <!--Darkmode button + Javascript....Script-->
 <button onclick="myFunction()">Dark mode</button>
-
+</div>
 <script>
 function myFunction() {
    var element = document.body;
@@ -177,5 +160,4 @@ function myFunction() {
    
 }
 </script>
-</body>
 </html>
