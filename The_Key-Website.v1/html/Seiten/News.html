@@ -87,9 +87,7 @@ body {
   display: block;
 }
 
-</style>
 
-<style>
   /*Dark mode, Button und Funktion (Javascript)*/
   body {
     background-color: #1d1c1c;
@@ -112,6 +110,46 @@ body {
     padding: 10px;
   }
   
+  /*
+  Css für den Inhalt der Seite
+  */
+  .Platzhalter{
+    width: 80%;
+    height: 70%;
+    top: 30%;
+    left: 130px;
+    position: absolute;
+  }
+
+
+  .Seiten-text{
+    float: left;
+    width: 50%;
+  }
+
+  /* Überschrift */
+  .Seiten-text h2{
+    font-size: 60px;
+  }
+  /* Basic Text*/
+  .Seiten-text p{
+    font-size: 25px;
+  }
+
+  /* 1. Pic */
+  .Seiten-pic{
+  float: left;
+  width: 50%;
+  }
+
+  /* 1. Pic */
+  .Seiten-pic img{
+  margin-top: 20%;
+  margin-left: 14%;
+  width: 80%;
+  }
+
+
 
 </style>
 </head>
@@ -123,7 +161,7 @@ body {
      <div class="menübar">
       <a style="font-size: 35px;">VERSCHLÜSSELUNG</a>
       <a href="../Startseite.html">HOME</a>
-      <a href="News.html">NEWS</a>
+      <a class="active" href="News.html">NEWS</a>
       <a href="Contact.html">CONTACT</a>
       <a href="About.html">ABOUT</a>
       <!--Darkmode button + Javascript....Script-->
@@ -135,36 +173,33 @@ body {
        <div class="dropdown">
 	
   	  <button class="dropbtn">DROPDOWN<i class="fa fa-caret-down"></i></button>
-      <div class= "dropdown-inhalt">
-        <a class="active" href="Unterseite5.1.html">THEMA 1</a>
-        <a href="Unterseite5.2.html">THEMA 2</a>
-        <a href="Unterseite5.3.html">THEMA 3</a>
+        <div class= "dropdown-inhalt">
+          <a href="Unterseite5.1.html">THEMA 1</a>
+          <a href="Unterseite5.2.html">THEMA 2</a>
+          <a href="Unterseite5.3.html">THEMA 3</a>
         </div>
        </div>
     </div>
   </div>
 </div>
-</div>
-<div>
-  <img src="Schloss.jpg" style="max-height: 50%;">
-</div>
-<div style="padding-left: 40px;" >
-<div  style="font-size: 30px;">
-<h2>Verschlüsselung</h2>
-<p> Definition:  Umwandlung von „Klartext“ in „Geheimsprache“, mithilfe eines Schlüssels, welcher der einzige Weg ist, die Daten zu  ver- und entschlüsseln</p>
 
 
-<nav>
-</nav>
-<h1>Ein Schlüssel</h1>
-<p>
-  <img src="../pics/key-animated-gif-3[1].gif" alt="Schlüssel">
-  
+<!--Seiten Inhalt(nach der NavBar)-->
+<div class="Platzhalter">
+<div class="Seiten-text">
+
+  <h2> Verschlüsseln</h2>
+  <p> Durch Verschlüsseln wird ein „Klartext“, also ein lesbarer Text, in einen „Geheimtext“, also in eine unverständliche Zeichenfolge umgewandelt.
+  Nicht nur Textnachrichten kann man verschlüsseln, sondern auch andere Arten von Information, wie Sprachnachrichten, Bildaufzeichnungen oder der Quellcode von Programmen. 
 </p>
+</div>
+<div class="Seiten-pic">
+  <img src="Website-Dateien/key-gif.gif">
+</div>
+</div>
 
-</div>
-</div>
-</div>
+
+</body>
 <script>
 function Funktion() {
    var element = document.body;

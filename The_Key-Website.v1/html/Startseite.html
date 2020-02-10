@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Verschlüsselung</title>
+    <link rel="icon" type="image/png" href="Website-Dateien/key.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -30,13 +31,12 @@ body {
 	align-items: center;
   min-height: 40px;
 	padding: 35px 20px;
-	font-size: 17px;
+	font-size: 25px;
   letter-spacing: 2px;
 }
 
 .menübar a:hover {
 	background-color: #4d4b4b;
-	color: rgb(255, 0, 212);
 }
 
 .menübar a.active {
@@ -53,11 +53,12 @@ body {
 /* Dropdown button */
 .dropdown .dropbtn {
   letter-spacing: 2px;
-  font-size: 17px;
+  font-size: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
   border: none;
   outline: none;
   color: white;
-  padding: 45px 20px;
+  padding: 38px 20px;
   background-color: #282828;
 }
 
@@ -99,7 +100,19 @@ body {
   .dark-mode {
     background-color: white;
     color: black;
+    
   }
+
+  .d.btn{
+    margin-top: 35px;
+    margin-left: 58%;
+    position: absolute;
+    background: #282828;
+    border: none;
+    padding: 10px;
+  }
+  
+
 </style>
 </head>
 <body>
@@ -108,20 +121,20 @@ body {
       
     <div class="container">
      <div class="menübar">
-      <a style="font-size: 30px;">VERSCHLÜSSELUNG</a>
+      <a style="font-size: 35px;">VERSCHLÜSSELUNG</a>
       <a class="active" href="Startseite.html">HOME</a>
-      <a href="#news">NEWS</a>
-      <a href="#contact">CONTACT</a>
-      <a href="#about">ABOUT</a>
+      <a href="Seiten/News.html">NEWS</a>
+      <a href="Seiten/Contact.html">CONTACT</a>
+      <a href="Seiten/About.html">ABOUT</a>
       <!--Darkmode button + Javascript....Script-->
-      <button onclick="myFunction()"><i class="fa fa-home"></i></button> 
+      
+     <button  onclick="Funktion()" class="d btn"><img src="Website-Dateien/Moon.png" ></img>
+     </button> 
 
   <!--Dropdown Button mit 3 Unterthemen-->
        <div class="dropdown">
 	
-  	  <button class="dropbtn">DROPDOWN
-          <i class="fa fa-caret-down"></i>
-	      </button>
+  	  <button class="dropbtn">DROPDOWN<i class="fa fa-caret-down"></i></button>
         <div class= "dropdown-inhalt">
           <a href="Seiten/Unterseite5.1.html">THEMA 1</a>
           <a href="Seiten/Unterseite5.2.html">THEMA 2</a>
@@ -135,23 +148,25 @@ body {
 <div>
   <img src="Schloss.jpg" style="max-height: 50%;">
 </div>
-<div style="padding-left: 30px;">
+<div style="padding-left: 40px;" >
+<div  style="font-size: 30px;">
 <h2>Verschlüsselung</h2>
-<p>Definition:  Umwandlung von „Klartext“ in „Geheimsprache“, mithilfe eines Schlüssels, welcher der einzige Weg ist, die Daten zu  ver- und entschlüsseln</p>
+<p> Definition:  Umwandlung von „Klartext“ in „Geheimsprache“, mithilfe eines Schlüssels, welcher der einzige Weg ist, die Daten zu  ver- und entschlüsseln</p>
 
 
 <nav>
 </nav>
-<h1>Unsere Produkte</h1>
+<h1>Ein Schlüssel</h1>
 <p>
   <img src="../pics/key-animated-gif-3[1].gif" alt="Schlüssel">
   
 </p>
 
-
+</div>
+</div>
 </div>
 <script>
-function myFunction() {
+function Funktion() {
    var element = document.body;
    element.classList.toggle("dark-mode");
    

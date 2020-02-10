@@ -3,21 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Verschlüsselung</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="Website-Dateien/key.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--Menüleiste --> 
     <style>
 body {
-	margin: 0;
+  margin: 0;
   padding: 0;
 	font-family: 'Open Sans Condensed', sans-serif;
   box-sizing: border-box;
 }
 
-.logo{
-letter-spacing: 5px;
-}
 /*container*/
 .menübar{ 
 	overflow: hidden;
@@ -33,13 +31,12 @@ letter-spacing: 5px;
 	align-items: center;
   min-height: 40px;
 	padding: 35px 20px;
-	font-size: 17px;
+	font-size: 25px;
   letter-spacing: 2px;
 }
 
 .menübar a:hover {
 	background-color: #4d4b4b;
-	color: rgb(255, 0, 212);
 }
 
 .menübar a.active {
@@ -56,11 +53,12 @@ letter-spacing: 5px;
 /* Dropdown button */
 .dropdown .dropbtn {
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
   border: none;
   outline: none;
   color: white;
-  padding: 45px 20px;
+  padding: 38px 20px;
   background-color: #282828;
 }
 
@@ -71,7 +69,7 @@ letter-spacing: 5px;
   background-color: #282828;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  
 }
 
 /* Links inside the dropdown */
@@ -102,7 +100,19 @@ letter-spacing: 5px;
   .dark-mode {
     background-color: white;
     color: black;
+    
   }
+
+  .d.btn{
+    margin-top: 35px;
+    margin-left: 58%;
+    position: absolute;
+    background: #282828;
+    border: none;
+    padding: 10px;
+  }
+  
+
 </style>
 </head>
 <body>
@@ -111,53 +121,52 @@ letter-spacing: 5px;
       
     <div class="container">
      <div class="menübar">
-      <a class="logo">VERSCHLÜSSELUNG</a>
+      <a style="font-size: 35px;">VERSCHLÜSSELUNG</a>
       <a href="../Startseite.html">HOME</a>
-      <a href="#news">NEWS</a>
-      <a href="#contact">CONTACT</a>
-      <a href="#about">ABOUT</a>
+      <a href="News.html">NEWS</a>
+      <a href="Contact.html">CONTACT</a>
+      <a href="About.html">ABOUT</a>
       <!--Darkmode button + Javascript....Script-->
-      <button onclick="myFunction()"><i class="fa fa-home"></i></button> 
+      
+     <button  onclick="Funktion()" class="d btn"><img src="Website-Dateien/Moon.png" ></img>
+     </button> 
 
   <!--Dropdown Button mit 3 Unterthemen-->
        <div class="dropdown">
-  	    <button class="dropbtn">DROPDOWN
-          <i class="fa fa-caret-down"></i>
-	      </button>
-        <div class= "dropdown-inhalt">
-          <a href="Unterseite5.1.html">THEMA 1</a>
-          <a href="Unterseite5.2.html">THEMA 2</a>
-          <a class="active" href="Unterseite5.3.html">THEMA 3</a>
+	
+  	  <button class="dropbtn">DROPDOWN<i class="fa fa-caret-down"></i></button>
+      <div class= "dropdown-inhalt">
+        <a href="Unterseite5.1.html">THEMA 1</a>
+        <a href="Unterseite5.2.html">THEMA 2</a>
+        <a class="active" href="Unterseite5.3.html">THEMA 3</a>
         </div>
        </div>
     </div>
   </div>
 </div>
 </div>
-<div style="padding-left: 30px;">
+<div>
+  <img src="Schloss.jpg" style="max-height: 50%;">
+</div>
+<div style="padding-left: 40px;" >
+<div  style="font-size: 30px;">
 <h2>Verschlüsselung</h2>
-<p>Some Inhalt..</p>
+<p> Definition:  Umwandlung von „Klartext“ in „Geheimsprache“, mithilfe eines Schlüssels, welcher der einzige Weg ist, die Daten zu  ver- und entschlüsseln</p>
 
 
 <nav>
-  <ul>
-	<li><a >Startseite</a></li>
-	<li><a >Unsere Preise</a></li>
-	<li>Bilder von unseren Produkten</li>
-  </ul>
 </nav>
-<h1>Unsere Produkte</h1>
+<h1>Ein Schlüssel</h1>
 <p>
-  <!--<img src="../pics/bett.jpg" alt="Bett">
-  <img src="../pics/kiefer.jpg" alt="Kiefer">-->
-  <img src="../pics/schaukelstuhl.img" alt="Schaukelstuhl">
-  <!--<img src="../pics/schreibtisch.jpg" alt="Schreibtisch">-->
+  <img src="../pics/key-animated-gif-3[1].gif" alt="Schlüssel">
+  
 </p>
 
-
+</div>
+</div>
 </div>
 <script>
-function myFunction() {
+function Funktion() {
    var element = document.body;
    element.classList.toggle("dark-mode");
    
