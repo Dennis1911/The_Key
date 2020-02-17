@@ -87,9 +87,7 @@ body {
   display: block;
 }
 
-</style>
 
-<style>
   /*Dark mode, Button und Funktion (Javascript)*/
   body {
     background-color: #1d1c1c;
@@ -105,17 +103,55 @@ body {
 
   .d.btn{
     margin-top: 35px;
-    margin-left: 46%;
+    margin-left: 53%;
     position: absolute;
     background: #282828;
     border: none;
     padding: 10px;
   }
-  .bpic1{
-	width: 100%;
-	height: auto;
-	
- }
+  
+  /*
+  Css für den Inhalt der Seite
+  */
+  .Platzhalter{
+    width: 80%;
+    height: 70%;
+    top: 30%;
+    left: 130px;
+    position: absolute;
+  }
+
+
+  .Seiten-text{
+    float: left;
+    width: 50%;
+  }
+
+  /* Überschrift */
+  .Seiten-text h2{
+    font-size: 60px;
+  }
+  /* Basic Text*/
+  .Seiten-text p{
+    font-size: 25px;
+  }
+
+  /* 1. Pic */
+  .Seiten-pic{
+  float: left;
+  width: 50%;
+  }
+
+  /* 1. Pic */
+  .Seiten-pic img{
+  margin-top: 20%;
+  margin-left: 14%;
+  width: 80%;
+  }
+
+
+
+
 
 </style>
 </head>
@@ -126,51 +162,60 @@ body {
     <div class="container">
      <div class="menübar">
       <a style="font-size: 35px;">VERSCHLÜSSELUNG</a>
-      <a class="active" href="Startseite.html">HOME</a>
-      <a href="Seiten/verschlüsseln1.html">VERSCHLÜSSELN</a>
-      <a href="Seiten/schlüssel2.html">DER SCHLÜSSEL</a>
-      <a href="Seiten/entschlüsseln3.html">ENTSCHLÜSSELN</a>
-      <a href="Seiten/entziffern4.html">ENTZIFFERN</a>
-      
-      
+      <a href="../Startseite.html">HOME</a>
+      <a class="active" href="News.html">VERSCHLÜSSELN</a>
+      <a href="Contact.html">CONTACT</a>
+      <a href="About.html">ABOUT</a>
       <!--Darkmode button + Javascript....Script-->
       
      <button  onclick="Funktion()" class="d btn"><img src="Website-Dateien/Moon.png" ></img>
      </button> 
 
-  <!--Dropdown Button mit 2 Unterthemen-->
+  <!--Dropdown Button mit 3 Unterthemen-->
        <div class="dropdown">
 	
-  	  <button class="dropbtn">KLASSIFIZIERUNG<i class="fa fa-caret-down"></i></button>
+  	  <button class="dropbtn">DROPDOWN<i class="fa fa-caret-down"></i></button>
         <div class= "dropdown-inhalt">
-          <a href="Seiten/Unterseite5.1.html">Symmetrische Verschlüsselung</a>
-          <a href="Seiten/Unterseite5.2.html">Asymmetrische Verschlüsselung</a>
+          <a href="Unterseite5.1.html">THEMA 1</a>
+          <a href="Unterseite5.2.html">THEMA 2</a>
         </div>
        </div>
     </div>
   </div>
 </div>
-</div>
-<div class="bpic1">
-  <img src="Website-Dateien/image0.jpeg" style="width: 100%">
-</div>
-<div style="padding-left: 40px;" >
-<div  style="font-size: 30px;">
-<h2>Verschlüsselung</h2>
-<p> Definition:  Umwandlung von „Klartext“ in „Geheimsprache“, mithilfe eines Schlüssels, welcher der einzige Weg ist, die Daten zu  ver- und entschlüsseln</p>
 
 
-<nav>
-</nav>
-<h1>Ein Schlüssel</h1>
-<p>
-  <img src="../pics/key-animated-gif-3[1].gif" alt="Schlüssel">
-  
+<!--Seiten Inhalt(nach der NavBar)-->
+<div class="Platzhalter">
+<div class="Seiten-text">
+
+  <h2> Verschlüsseln</h2>
+  <p> Durch Verschlüsseln wird ein „Klartext“, also ein lesbarer Text, in einen „Geheimtext“, also in eine unverständliche Zeichenfolge umgewandelt.
+  Nicht nur Textnachrichten kann man verschlüsseln, sondern auch andere Arten von Information, wie Sprachnachrichten, Bildaufzeichnungen oder der Quellcode von Programmen.</br></br>
+  Eine einfache und oft verwendete Art der Verschlüsselung ist die Codierung. Hier werden in der Regel keine einzelnen  Klartextzeichen oder kurze Zeichenkombinationen verschlüsselt,
+  sondern ganze  Satzteile, Worte oder ganze Sätze. Um Worte oder ganze Sätze umzuwandeln, geschieht dies meist als tabellarische Liste, z.B. in Form von Codebüchern.</br></br></br>
+  Zur Steigerung der kryptographischen Sicherheit von Codes werden die damit erhaltenen Geheimtexte oft einem zweiten Verschlüsselungsschritt unterworfen.
+ Zu den  geheimen Codes gibt es auch offene Codes, wie den Morsecode und ASCII, die nicht kryptographischen Zwecken dienen und keine Verschlüsselung darstellen.  
 </p>
+</div>
+<div class="Seiten-pic">
+ <img src="Website-Dateien/Schema.png">
+<img src="Website-Dateien/Tabelle.gif">
+</div>
+</div>
+ 
+<!-- Verschlüsselung 1 Ende-->
 
-</div>
-</div>
-</div>
+
+<!-- Verschlüsselung 2.Text -->
+
+
+
+
+
+
+
+</body>
 <script>
 function Funktion() {
    var element = document.body;
