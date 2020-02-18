@@ -64,11 +64,11 @@ body {
 
 /* Dropdown content (hidden by default) */
 .dropdown-inhalt {
+  z-index: 1;
   display: none;
   position: absolute;
   background-color: #282828;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   
 }
 
@@ -100,7 +100,6 @@ body {
   .dark-mode {
     background-color: white;
     color: black;
-    
   }
 
   .d.btn{
@@ -111,12 +110,70 @@ body {
     border: none;
     padding: 10px;
   }
-  .bpic1{
-	width: 100%;
-	height: auto;
+  .bpic{
+    
+    background-image: url("Website-Dateien/bpic.jpg");
+    min-height:900px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	
- }
+  }
+  .section{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 500px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    animation: text 2s 1;
+    animation-delay: 1.5s;
+  }
+  .section2, .section3,.section4,.section5{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 500px;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
 
+
+.section2{
+  animation: text 2s 1;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+
+
+}
+.section3{
+  animation: text 2s 1;
+  animation-delay: 3.5s;
+
+}
+.section4{
+  animation: text 2s 1;
+  animation-delay: 4.5s;
+
+}
+.section5{
+  animation: text 2s 1;
+  animation-delay: 5.5s;
+
+}
+
+@keyframes text {
+  0%{
+    color:#282828 ;
+    margin-left:-800px ;
+    
+  }
+  
+}
 </style>
 </head>
 <body>
@@ -151,22 +208,38 @@ body {
   </div>
 </div>
 </div>
-<div class="bpic1">
-  <img src="Website-Dateien/image0.jpeg" style="width: 100%">
+<!--Hintergrund Bild-->
+<div class="bpic">
 </div>
-<div style="padding-left: 40px;" >
-<div  style="font-size: 30px;">
-<h2>Verschlüsselung</h2>
-<p> Definition:  Umwandlung von „Klartext“ in „Geheimsprache“, mithilfe eines Schlüssels, welcher der einzige Weg ist, die Daten zu  ver- und entschlüsseln</p>
-
-
-<nav>
-</nav>
-<h1>Ein Schlüssel</h1>
-<p>
-  <img src="../pics/key-animated-gif-3[1].gif" alt="Schlüssel">
+<!---->
+<section class="section">
+  <p>Durch Verschlüsselung werden Ihre persönliche Daten geschützt</p>
+  <img style="width: 10%;" src="Website-Dateien/safe.png">
   
-</p>
+</section>
+
+<section class="section2">
+  <p>Die Verschlüsselung hat ihren Ursprung bereits im alten Ägypten</p>
+  <img style="width: 10%;" src="Website-Dateien/pyramide.png">
+</section>
+
+<section class="section3">
+  <p>Später war Kryptologie ein Thema der Geheimdienste</p>
+  <img style="width: 10%;" src="Website-Dateien/spy.png">
+</section>
+
+<section class="section4">
+  <p>In der heutigen Zeit gehört Verschlüsselung zum Alltag</p>
+  <img style="width: 10%;" src="Website-Dateien/secret.png">
+</section>
+
+<section class="section5">
+  <p>Schon im 1. Weltkrieg hat Verschlüsselung von Daten eine wichtige Rolle gespielt</p>
+  <img style="width: 10%;" src="Website-Dateien/bombe.png">
+</section>
+
+
+
 
 </div>
 </div>
