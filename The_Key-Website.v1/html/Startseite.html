@@ -110,17 +110,18 @@ body {
     border: none;
     padding: 10px;
   }
+
+  /*Hintergrundbild*/
   .bpic{
     
     background-image: url("Website-Dateien/bpic.jpg");
     min-height:900px;
-    position: relative;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-	
   }
+
+  /*Sections*/
   .section{
     display: flex;
     justify-content: space-around;
@@ -146,31 +147,24 @@ body {
 .section2{
   animation: text 2s 1;
   animation-delay: 2.5s;
-  animation-fill-mode: forwards;
-
-
 }
 .section3{
   animation: text 2s 1;
   animation-delay: 3.5s;
-
 }
 .section4{
   animation: text 2s 1;
   animation-delay: 4.5s;
-
 }
 .section5{
   animation: text 2s 1;
   animation-delay: 5.5s;
-
 }
 
+/*Animation*/
 @keyframes text {
   0%{
-    color:#282828 ;
-    margin-left:-800px ;
-    
+    margin-left:-1000px ;
   }
   
 }
@@ -190,13 +184,12 @@ body {
       <a href="Seiten/entziffern4.html">ENTZIFFERN</a>
       
       
-      <!--Darkmode button + Javascript....Script-->
-      
+    <!--Darkmode button + Javascript....Script-->
      <button  onclick="Funktion()" class="d btn"><img src="Website-Dateien/Moon.png" ></img>
      </button> 
 
-  <!--Dropdown Button mit 2 Unterthemen-->
-       <div class="dropdown">
+    <!--Dropdown Button mit 2 Unterthemen-->
+    <div class="dropdown">
 	
   	  <button class="dropbtn">KLASSIFIZIERUNG<i class="fa fa-caret-down"></i></button>
         <div class= "dropdown-inhalt">
