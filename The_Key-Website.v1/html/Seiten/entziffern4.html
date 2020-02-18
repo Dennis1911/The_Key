@@ -103,7 +103,7 @@ body {
 
   .d.btn{
     margin-top: 35px;
-    margin-left: 53%;
+    margin-left: 36%;
     position: absolute;
     background: #282828;
     border: none;
@@ -116,7 +116,7 @@ body {
   .Platzhalter{
     width: 80%;
     height: 70%;
-    top: 30%;
+    top: 25%;
     left: 130px;
     position: absolute;
   }
@@ -159,25 +159,28 @@ body {
   <!--Der HMTL Teil:-->
   
       
-    <div class="container">
-     <div class="menübar">
-      <a style="font-size: 35px;">VERSCHLÜSSELUNG</a>
-      <a href="../Startseite.html">HOME</a>
-      <a class="active" href="News.html">VERSCHLÜSSELN</a>
-      <a href="Contact.html">CONTACT</a>
-      <a href="About.html">ABOUT</a>
-      <!--Darkmode button + Javascript....Script-->
-      
-     <button  onclick="Funktion()" class="d btn"><img src="Website-Dateien/Moon.png" ></img>
-     </button> 
+  <div class="container">
+    <div class="menübar">
+     <a style="font-size: 35px;">VERSCHLÜSSELUNG</a>
+     <a href="../Startseite.html">HOME</a>
+     <a href="verschlüsseln1.html">VERSCHLÜSSELN</a>
+     <a href="schlüssel2.html">DER SCHLÜSSEL</a>
+     <a href="entschlüsseln3.html">ENTSCHLÜSSELN</a>
+     <a class="active" href="entziffern4.html">ENTZIFFERN</a>
+     
+     
+     <!--Darkmode button + Javascript....Script-->
+     
+    <button  onclick="Funktion()" class="d btn"><img src="Website-Dateien/Moon.png" ></img>
+    </button> 
 
-  <!--Dropdown Button mit 3 Unterthemen-->
-       <div class="dropdown">
-	
-  	  <button class="dropbtn">DROPDOWN<i class="fa fa-caret-down"></i></button>
-        <div class= "dropdown-inhalt">
-          <a href="Unterseite5.1.html">THEMA 1</a>
-          <a href="Unterseite5.2.html">THEMA 2</a>
+ <!--Dropdown Button mit 2 Unterthemen-->
+      <div class="dropdown">
+ 
+     <button class="dropbtn">KLASSIFIZIERUNG<i class="fa fa-caret-down"></i></button>
+       <div class= "dropdown-inhalt">
+         <a href="Unterseite5.1.html">Symmetrische Verschlüsselung</a>
+         <a href="Unterseite5.2.html">Asymmetrische Verschlüsselung</a>
         </div>
        </div>
     </div>
@@ -189,30 +192,37 @@ body {
 <div class="Platzhalter">
 <div class="Seiten-text">
 
-  <h2> Verschlüsseln</h2>
-  <p> Durch Verschlüsseln wird ein „Klartext“, also ein lesbarer Text, in einen „Geheimtext“, also in eine unverständliche Zeichenfolge umgewandelt.
-  Nicht nur Textnachrichten kann man verschlüsseln, sondern auch andere Arten von Information, wie Sprachnachrichten, Bildaufzeichnungen oder der Quellcode von Programmen.</br></br>
-  Eine einfache und oft verwendete Art der Verschlüsselung ist die Codierung. Hier werden in der Regel keine einzelnen  Klartextzeichen oder kurze Zeichenkombinationen verschlüsselt,
-  sondern ganze  Satzteile, Worte oder ganze Sätze. Um Worte oder ganze Sätze umzuwandeln, geschieht dies meist als tabellarische Liste, z.B. in Form von Codebüchern.</br></br></br>
-  Zur Steigerung der kryptographischen Sicherheit von Codes werden die damit erhaltenen Geheimtexte oft einem zweiten Verschlüsselungsschritt unterworfen.
- Zu den  geheimen Codes gibt es auch offene Codes, wie den Morsecode und ASCII, die nicht kryptographischen Zwecken dienen und keine Verschlüsselung darstellen.  
-</p>
+  <h2>Die Entzifferung</h2>
+  <p> Sprachlich zu trennen von der Entschlüsselung ist der Begriff der „Entzifferung“.
+     Als Entzifferung wird es bezeichnet, dem Geheimtext seine geheime Nachricht zu entringen, ohne im Besitz des Schlüssels zu sein.
+     Dies ist die Tätigkeit eines Kryptoanalytikers, auch als „Codeknacker“ bezeichnet. Im Idealfall gelingt keine Entzifferung, weil das Verschlüsselungsverfahren ausreichend „stark“ ist.
+     Es wird dann als „unbrechbar“ oder zumindest als „kryptographisch stark“ bezeichnet. Im Gegensatz zu einer „starken Verschlüsselung“
+     lässt sich eine „schwache Verschlüsselung“ ohne vorherige Kenntnis des Schlüssels
+     mit vertretbarem Aufwand mithilfe kryptanalytischer Methoden brechen. Durch Fortschritte in der Kryptologie kann sich
+     eine vermeintlich starke Verschlüsselung im Laufe der Zeit als eine schwache Verschlüsselung herausstellen.  
+  </p>
+  <p>
+    Das Arbeitsgebiet, das sich mit der Entzifferung von Geheimtexten befasst, ist die Kryptanalyse.  Sie ist neben der Kryptographie das zweite Teilgebiet der Kryptologie.
+    Die Kryptanalyse dient nicht nur zur unbefugten Entzifferung von Geheimnachrichten, sondern sie befasst sich auch mit „(Un-)Brechbarkeit“ von Verschlüsselungen,
+    also der Prüfung der Sicherheit von Verschlüsselungsverfahren gegen unerlaubte  Entzifferung.  Je länger ein Verfahren bereits öffentlich bekannt ist,
+    desto häufiger erfolgt die Anwendung.
+  </p>
+</br></br></br></br></br></br>
+  <h3 style="font-size: 35px;">Beispiel: Caesar-Verschlüsselung mit Schlüssel „C“</h3>
+  <p>
+    Als geheimer Schlüssel wird hier „C“ genutzt, also der dritte Buchstabe des lateinischen Alphabets.
+    Das bedeutet die Ersetzung jedes Klartextbuchstabens durch den jeweiligen im Alphabet um drei Stellen verschobenen Buchstaben.
+    So wird z.B. aus dem Anfangsbuchstaben „B“ des Klartextes durch Verschlüsselung der im Alphabet drei Stellen später auftretende Buchstabe „E“ im Geheimtext, und so weiter:
+  </p>
 </div>
 <div class="Seiten-pic">
- <img src="Website-Dateien/Schema.png">
-<img src="Website-Dateien/Tabelle.gif">
+ <img src="Website-Dateien/studie.jpg">
+ <img style="margin-top: 380px;" src="Website-Dateien/Caesar3.svg">
+
 </div>
 </div>
  
-<!-- Verschlüsselung 1 Ende-->
-
-
-<!-- Verschlüsselung 2.Text -->
-
-
-
-
-
+<!-- Entziffern 1 Ende-->
 
 
 </body>

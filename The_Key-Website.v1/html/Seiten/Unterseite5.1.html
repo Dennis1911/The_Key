@@ -87,9 +87,7 @@ body {
   display: block;
 }
 
-</style>
 
-<style>
   /*Dark mode, Button und Funktion (Javascript)*/
   body {
     background-color: #1d1c1c;
@@ -105,13 +103,55 @@ body {
 
   .d.btn{
     margin-top: 35px;
-    margin-left: 58%;
+    margin-left: 36%;
     position: absolute;
     background: #282828;
     border: none;
     padding: 10px;
   }
   
+  /*
+  Css für den Inhalt der Seite
+  */
+  .Platzhalter{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+  }
+
+
+  .Seiten-text{
+    float: left;
+    width: 50%;
+  }
+
+  /* Überschrift */
+  .Seiten-text h2{
+    font-size: 60px;
+  }
+  /* Basic Text*/
+  .Seiten-text p{
+    font-size: 25px;
+  }
+
+  /* 1. Pic */
+  .Seiten-pic{
+  float: left;
+  width: 50%;
+  }
+
+  /* 1. Pic */
+  .Seiten-pic img{
+  margin-top: 20%;
+  margin-left: 14%;
+  width: 80%;
+  }
+
+
+
+
 
 </style>
 </head>
@@ -119,52 +159,74 @@ body {
   <!--Der HMTL Teil:-->
   
       
-    <div class="container">
-     <div class="menübar">
-      <a style="font-size: 35px;">VERSCHLÜSSELUNG</a>
-      <a href="../Startseite.html">HOME</a>
-      <a href="News.html">NEWS</a>
-      <a href="Contact.html">CONTACT</a>
-      <a href="About.html">ABOUT</a>
-      <!--Darkmode button + Javascript....Script-->
-      
-     <button  onclick="Funktion()" class="d btn"><img src="Website-Dateien/Moon.png" ></img>
-     </button> 
+  <div class="container">
+    <div class="menübar">
+     <a style="font-size: 35px;">VERSCHLÜSSELUNG</a>
+     <a href="../Startseite.html">HOME</a>
+     <a href="verschlüsseln1.html">VERSCHLÜSSELN</a>
+     <a href="schlüssel2.html">DER SCHLÜSSEL</a>
+     <a href="entschlüsseln3.html">ENTSCHLÜSSELN</a>
+     <a href="entziffern4.html">ENTZIFFERN</a>
+     
+     
+     <!--Darkmode button + Javascript....Script-->
+     
+    <button  onclick="Funktion()" class="d btn"><img src="Website-Dateien/Moon.png" ></img>
+    </button> 
 
-  <!--Dropdown Button mit 3 Unterthemen-->
-       <div class="dropdown">
-	
-  	  <button class="dropbtn">DROPDOWN<i class="fa fa-caret-down"></i></button>
-      <div class= "dropdown-inhalt">
-        <a class="active" href="Unterseite5.1.html">THEMA 1</a>
-        <a href="Unterseite5.2.html">THEMA 2</a>
-        <a href="Unterseite5.3.html">THEMA 3</a>
+ <!--Dropdown Button mit 2 Unterthemen-->
+      <div class="dropdown">
+ 
+     <button class="dropbtn">KLASSIFIZIERUNG<i class="fa fa-caret-down"></i></button>
+       <div class= "dropdown-inhalt">
+         <a class="active" href="Unterseite5.1.html">Symmetrische Verschlüsselung</a>
+         <a href="Unterseite5.2.html">Asymmetrische Verschlüsselung</a>
         </div>
        </div>
     </div>
   </div>
 </div>
-</div>
-<div>
-  <img src="Schloss.jpg" style="max-height: 50%;">
-</div>
-<div style="padding-left: 40px;" >
-<div  style="font-size: 30px;">
-<h2>Verschlüsselung</h2>
-<p> Definition:  Umwandlung von „Klartext“ in „Geheimsprache“, mithilfe eines Schlüssels, welcher der einzige Weg ist, die Daten zu  ver- und entschlüsseln</p>
 
 
-<nav>
-</nav>
-<h1>Ein Schlüssel</h1>
-<p>
-  <img src="../pics/key-animated-gif-3[1].gif" alt="Schlüssel">
-  
-</p>
+<!--Seiten Inhalt(nach der NavBar)-->
+<div class="Platzhalter">
+<div class="Seiten-text">
 
+  <h2>Klassifizierung</h2>
+  <p>
+    Prinzipiell unterscheidet man unterschiedliche klassische und moderne symmetrische Verschlüsselungsverfahren und die erst seit wenigen Jahrzehnten bekannten
+    asymmetrischen Verschlüsselungsverfahren. Klassische Verschlüsselungsverfahren können nach dem verwendeten Alphabet klassifiziert werden. 
+  </p>
+  <h3 style="font-size: 35px;">Symmetrische Verschlüsselung</h3>
+  <p>
+  Bei der symmetrischen Verschlüsselung ist der Schlüssel dazu da auch zu Entschlüsseln.
+  </br>
+  Symmetrische Verschlüsselungsprozesse  verwenden zur Ver- und Entschlüsselung den selben Schlüssel.
+  Bei historischen Verfahren lassen sich zwei Verschlüsselungsklassen unterscheiden. Bei der ersten werden die Buchstaben des Klartextes einzeln durch andere Buchstaben ersetzt.
+  Mit dem lateinischen Wort substituere (deutsch: „ersetzen“) werden sie als Substitutionsverfahren bezeichnet. Im Gegensatz dazu bleibt bei der anderen Verschlüsselungsklasse,
+  genannt Transposition (deutsch: „versetzen“), jeder Buchstabe wie er ist, aber nicht wo er ist. Sein Platz im Text wird geändert, die einzelnen Buchstaben des Textes werden
+  aslo zufällig durcheinandergewürfelt. Eine einfache Form einer Transpositions-Verschlüsselung ist die „Revertierung“ (deutsch: „umkehren“) eines Textes.
+  So entsteht z.B. aus dem Klartext „Geheimnis“ der Geheimtext SINMIEHEG. 
+  </br></br>
+  Bei aktuelleren symmetrischen Verfahren werden Stromverschlüsselung und auf einer Blockverschlüsselung basierende Verfahren unterschieden.
+  Bei der Stromverschlüsselung werden die Zeichen des Klartextes alle einzeln und nacheinander verschlüsselt. Bei einer Blockverschlüsselung
+  hingegen wird der Klartext zuerst in Blöcke einer bestimmten Größe aufgeteilt. Wie dann die Blöcke verschlüsselt werden, hängt von dem Betriebsmodus der Verschlüsselungsmethodeab. 
+  </p>
 </div>
 </div>
-</div>
+ 
+<!-- Verschlüsselung 1 Ende-->
+
+
+<!-- Verschlüsselung 2.Text -->
+
+
+
+
+
+
+
+</body>
 <script>
 function Funktion() {
    var element = document.body;
